@@ -1,0 +1,14 @@
+C:\dev\llamacpp_cuda12\llama-server ^
+  -m C:/Users/Alex/.lmstudio/models/unsloth/gemma-4-26B-A4B-it-GGUF/gemma-4-26B-A4B-it-UD-Q4_K_M.gguf ^
+  --host 0.0.0.0 --port 8080 ^
+  --ctx-size 131072 ^
+  --fit on --fit-ctx 131072 --fit-target 1536 ^
+  --temp 1.0 --top-p 0.95 --top-k 64 ^
+  --repeat-penalty 1.0 ^
+  -ctk q8_0 -ctv q8_0 ^
+  --flash-attn on ^
+  --batch-size 1024 --ubatch-size 512 ^
+  --threads 10 --threads-batch 12 ^
+  --no-mmap --mlock ^
+  --parallel 1 --prio 2 --no-warmup --jinja ^
+  --alias "gemma26B"

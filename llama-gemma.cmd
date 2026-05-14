@@ -1,0 +1,13 @@
+C:\dev\llamacpp_cuda12\llama-server ^
+  -m C:/Users/Alex/.lmstudio/models/unsloth/gemma-4-26B-A4B-it-GGUF/gemma-4-26B-A4B-it-UD-Q4_K_M.gguf ^
+  -np 1 ^
+  -fa on ^
+  --cpu-moe ^
+  --fit on ^
+  --no-mmap ^
+  --mlock ^
+  --no-warmup ^
+  --temp 0.6 ^
+  --top-p 0.95 ^
+  --top-k 64
+  --alias "gemma26B"
